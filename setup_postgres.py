@@ -2,6 +2,10 @@
 import asyncio
 import sys
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # === Hướng dẫn khởi chạy PostgreSQL (chạy 1 lần) ===
 # 1. Chạy lệnh Docker sau (nếu chưa có Postgres):
 # docker run -d --name postgres-langgraph \

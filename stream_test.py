@@ -13,7 +13,9 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_tavily import TavilySearch
 from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.postgres.aio import AsyncPostgresSaver
+from dotenv import load_dotenv
 
+load_dotenv()
 # ====================== WINDOWS FIX ======================
 if sys.platform == "win32":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())

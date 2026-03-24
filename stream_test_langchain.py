@@ -14,7 +14,9 @@ from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_community.chat_message_histories import PostgresChatMessageHistory
+from dotenv import load_dotenv
 
+load_dotenv()
 # ====================== WINDOWS FIX ======================
 if sys.platform == "win32":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
